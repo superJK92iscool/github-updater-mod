@@ -1,0 +1,7 @@
+{
+  "loaders": {
+    "1.12.2": [
+      "com.superJK92.githubupdater.GitHubUpdaterCoreMod"
+    ]
+  }
+}

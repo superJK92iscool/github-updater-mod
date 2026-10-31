@@ -1,0 +1,23 @@
+plugins {
+    id 'java-library'
+    id 'com.cleanroommc.cleanroomgradle'
+}
+
+cleanroom {
+    mode = 'loader'
+}
+
+dependencies {
+    implementation cleanroom("com.cleanroommc:cleanroom:0.7.14-alpha")
+}
+
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(25)
+    }
+}
+
+tasks.withType(JavaCompile).configureEach {
+    options.encoding = 'UTF-8'
+    options.release.set(25)
+}
