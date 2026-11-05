@@ -18,11 +18,11 @@ jobs:
         uses: actions/checkout@v4
 
       # 2. Setup Java Environment
-      - name: Set up JDK 21
+      - name: Set up JDK 25
         uses: actions/setup-java@v4
         with:
           distribution: 'temurin'
-          java-version: '21'
+          java-version: '25'
 
       # 3. Setup and cache Gradle using the official Gradle Action
       - name: Build with Gradle
