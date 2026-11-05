@@ -16,11 +16,11 @@ public class GitHubUpdaterCoreMod implements IFMLLoadingPlugin {
     private static final Logger LOGGER = LogManager.getLogger("GitHubUpdater");
 
     private static final String[][] GITHUB_MODS = {
-        {"TIABS-1.12.2.jar", "mods/TIABS-1.12.2.jar"},
-        {"TinkerSkyblock-1.12.2.jar", "mods/TinkerSkyblock-1.12.2.jar"},
-        {"extrautils2-1.12.2.jar", "mods/extrautils2-1.12.2.jar"},
-        {"packcompanion.jar", "mods/packcompanion.jar"},
-        {"pebbledrop.jar", "mods/pebbledrop.jar"}
+        {"TIABS-1.12.2.jar", "TIABS-1.12.2.jar"},
+        {"TinkerSkyblock-1.12.2.jar", "TinkerSkyblock-1.12.2.jar"},
+        {"extrautils2-1.12.2.jar", "extrautils2-1.12.2.jar"},
+        {"packcompanion.jar", "packcompanion.jar"},
+        {"pebbledrop.jar", "pebbledrop.jar"}
     };
 
     private static final String REPO_BASE_URL = "https://raw.githubusercontent.com/superJK92iscool/mc-mods/main/";

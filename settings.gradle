@@ -6,8 +6,21 @@ pluginManagement {
 }
 
 plugins {
-    id 'com.cleanroommc.cleanroomgradle.settings' version '0.17.8'
+    id 'com.cleanroommc.cleanroomgradle.settings' version '0.22.1'
     id 'org.gradle.toolchains.foojay-resolver-convention' version '0.8.0'
 }
+
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.PREFER_SETTINGS)
+    repositories {
+        google()
+        mavenCentral()
+        maven { url = 'https://maven.cleanroommc.com' }
+        maven { url = 'https://curse.cleanroommc.com' }
+        maven { url = 'https://libraries.minecraft.net' }
+    }
+}
+
+
 
 rootProject.name = 'github-updater'
